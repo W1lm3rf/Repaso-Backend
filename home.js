@@ -67,30 +67,33 @@ const inventory = [
       console.log(libros);
       
     })
+
+
+
     
     let contenedor_ejercicio7 = document.getElementById("ContenedorEjercicio7")
-    let ejercicio7 = inventory.map(libros =>{
-      let contenedorLibros = document.createElement("div")
-      let TituloporComas = libros.title.split("");
-      let TituloAlReves = libros.title.split("").reverse().join("");
-      let TituloIntermitente = TituloporComas.map((tituloss, posicion) =>{
-        if (posicion % 2 === 0) {
-          return tituloss.toUpperCase()
-        }return tituloss.toLowerCase()
 
-        
-      })
+    let ejercicio7 = inventory.map(libros =>{
+
+      let contenedorLibros = document.createElement("div")
+
+      let TituloporComas = libros.title.split("");
       
-      console.log(TituloIntermitente.join(""));
+      let TituloAlReves = libros.title.split("").reverse().join("");
+
+      let TituloIntermitente = TituloporComas.map((tituloss, posicion) =>{
+
+        if (posicion % 2 === 0) {
+
+          return tituloss.toUpperCase()
+        } 
+          return tituloss.toLowerCase()
+
+      })      
       
-      //console.log(TituloporComas);
       contenedorLibros.innerHTML = `<br>Titulo: ${libros.title} <br>Titulo deletreado: ${TituloporComas} <br>Titulo al reves: ${TituloAlReves} <br>Titulo Intermitente: ${TituloIntermitente.join("")}`;
       contenedor_ejercicio7.appendChild(contenedorLibros)
       
     })
 
-
-    //let TituloporComas = inventory.map(e => e.title).split("");
-    //console.log(TituloporComas);
-    
   
