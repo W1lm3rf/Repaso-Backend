@@ -96,4 +96,25 @@ const inventory = [
       
     })
 
+
+    //Ejercicio que resolvio el profesor.
+    // let contenedor = document.getElementById("contenedor")
+    // let nuevoArreglo = inventory.map(libro => {
+    //   let nuevoLibro = {}
+    //   let libro = libro.title
+    //   nuevoLibro.title = libro
+    //   let tituloDeletreado = titulo.split("").join(",")
+    //   nuevoLibro.tituloDeletreado = tituloDeletreado
+    //   let TituloAlReves = titulo.split("").reverse().join("")
+    //   nuevoLibro.TituloAlReves = TituloAlReves
+    //   let tituloMyM = titulo.split("")
+
+    //   for (let i = 0; i < tituloMyM.length; i++) {
+    //     if (i%2==0){
+    //       tituloMyM[i] = titulo[i].toUpperCase();
+    //     }tituloMyM[i] = titulo[i].toLowerCase();
+        
+    //   }nuevoArreglo.tituloMyM = tituloMyM.join("");
+    //   return nuevoLibro
+    // })
   
