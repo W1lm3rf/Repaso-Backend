@@ -118,18 +118,18 @@ const inventory = [
     //   return nuevoLibro
     // })
   
-let mostrarTitulo = inventory.forEach(libro => { 
+// let mostrarTitulo = inventory.forEach(libro => { 
   
-  for (let i = 0; i < libro.title.length; i++) {
-    console.log(libro.title);
+//   for (let i = 0; i < libro.title.length; i++) {
+//     console.log(libro.title);
     
-    if (libro.title == "The Iliad"){ console.log(`el titulo ${libro.title} esta en la posicion ${libro.title.length}`);
-    } console.log("nada");
+//     if (libro.title == "The Iliad"){ console.log(`el titulo ${libro.title} esta en la posicion ${libro.title.length}`);
+//     } console.log("nada");
     
-  }
+//   }
   
   
-   }) 
+//    }) 
 
 
 //verificar si existe algun libro con una calificacion menor de 3.7 o una calificacion menor a 4.1
@@ -138,9 +138,22 @@ let mostrarTitulo = inventory.forEach(libro => {
 // )
 
 //hecha por el profesor
-console.log(inventory.some(calificacion => calificacion.rating < 3.1 || calificacion.rating <4.7));
+//console.log(inventory.some(calificacion => calificacion.rating < 3.1 || calificacion.rating <4.7));
 
 
 // ordenar los libros por su precion en orden ascendente y descendente.
 //console.log(inventory.sort((a, b) => a.price - b.price));
-console.log(inventory.sort((a, b) => a.price - b.price));
+//console.log(inventory.sort((a, b) => a.price - b.price));
+
+
+//Ejercicio 12 crear dos propiedades nuevas.
+let nuevoArreglo12 = inventory.map(libro =>{
+
+  let Max = 10000
+  let Min = 1000
+
+  let sales = sales.Math.random()
+  console.log(sales);
+  sales = sales.random.range(Min, Max)
+
+})
