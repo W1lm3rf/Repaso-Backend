@@ -139,3 +139,8 @@ let mostrarTitulo = inventory.forEach(libro => {
 
 //hecha por el profesor
 console.log(inventory.some(calificacion => calificacion.rating < 3.1 || calificacion.rating <4.7));
+
+
+// ordenar los libros por su precion en orden ascendente y descendente.
+//console.log(inventory.sort((a, b) => a.price - b.price));
+console.log(inventory.sort((a, b) => a.price - b.price));
