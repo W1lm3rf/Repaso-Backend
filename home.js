@@ -61,40 +61,40 @@ const inventory = [
     })
     */
 
-    let ArregloLibros = inventory.map(libros =>{
-      let descuento = "no existe2";
-      libros.descuento = descuento
-      console.log(libros);
+    // let ArregloLibros = inventory.map(libros =>{
+    //   let descuento = "no existe2";
+    //   libros.descuento = descuento
+    //   console.log(libros);
       
-    })
+    // })
 
 
 
     
-    let contenedor_ejercicio7 = document.getElementById("ContenedorEjercicio7")
+    // let contenedor_ejercicio7 = document.getElementById("ContenedorEjercicio7")
 
-    let ejercicio7 = inventory.map(libros =>{
+    // let ejercicio7 = inventory.map(libros =>{
 
-      let contenedorLibros = document.createElement("div")
+    //   let contenedorLibros = document.createElement("div")
 
-      let TituloporComas = libros.title.split("");
+    //   let TituloporComas = libros.title.split("");
       
-      let TituloAlReves = libros.title.split("").reverse().join("");
+    //   let TituloAlReves = libros.title.split("").reverse().join("");
 
-      let TituloIntermitente = TituloporComas.map((tituloss, posicion) =>{
+    //   let TituloIntermitente = TituloporComas.map((tituloss, posicion) =>{
 
-        if (posicion % 2 === 0) {
+    //     if (posicion % 2 === 0) {
 
-          return tituloss.toUpperCase()
-        } 
-          return tituloss.toLowerCase()
+    //       return tituloss.toUpperCase()
+    //     } 
+    //       return tituloss.toLowerCase()
 
-      })      
+    //   })      
       
-      contenedorLibros.innerHTML = `<br>Titulo: ${libros.title} <br>Titulo deletreado: ${TituloporComas} <br>Titulo al reves: ${TituloAlReves} <br>Titulo Intermitente: ${TituloIntermitente.join("")}`;
-      contenedor_ejercicio7.appendChild(contenedorLibros)
+    //   contenedorLibros.innerHTML = `<br>Titulo: ${libros.title} <br>Titulo deletreado: ${TituloporComas} <br>Titulo al reves: ${TituloAlReves} <br>Titulo Intermitente: ${TituloIntermitente.join("")}`;
+    //   contenedor_ejercicio7.appendChild(contenedorLibros)
       
-    })
+    // })
 
 
     //Ejercicio que resolvio el profesor.
@@ -118,3 +118,24 @@ const inventory = [
     //   return nuevoLibro
     // })
   
+let mostrarTitulo = inventory.forEach(libro => { 
+  
+  for (let i = 0; i < libro.title.length; i++) {
+    console.log(libro.title);
+    
+    if (libro.title == "The Iliad"){ console.log(`el titulo ${libro.title} esta en la posicion ${libro.title.length}`);
+    } console.log("nada");
+    
+  }
+  
+  
+   }) 
+
+
+//verificar si existe algun libro con una calificacion menor de 3.7 o una calificacion menor a 4.1
+// let Calificacion = inventory.findIndex(calificacion => { if(calificacion.rating < 3.7 || calificacion.rating < 4.1) {console.log(`${calificacion.rating}`)} else console.log(`No existe ${calificacion.rating}`);
+// ;}
+// )
+
+//hecha por el profesor
+console.log(inventory.some(calificacion => calificacion.rating < 3.1 || calificacion.rating <4.7));
